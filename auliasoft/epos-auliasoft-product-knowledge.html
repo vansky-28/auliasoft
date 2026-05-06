@@ -516,17 +516,19 @@
       }
 
       /* GAMBAR */
+       /* GAMBAR */
       .brand-app-screen {
-        background: #0f2a1a;
         padding: 1rem;
         border-radius: 12px;
+        text-align: center; /* biar gambar ke tengah */
       }
 
       .brand-app-screen img {
-        width: 100%;
+        width: 70%; /* ubah jadi 60% / 50% sesuai selera */
         height: auto;
         border-radius: 8px;
         display: block;
+        margin: 0 auto; /* biar tetap di tengah */
         transition: transform 0.3s ease;
       }
 
@@ -748,14 +750,14 @@
         margin-top: 2.5rem;
       }
       .target-img {
-        display: block;
-        margin: 0 auto 1rem auto;
-        width: 100%; /* ikut lebar card */
-        max-width: 260px; /* batas maksimal biar rapi */
-        height: auto; /* biar proporsional */
-        object-fit: contain; /* tidak kepotong */
-        border-radius: 12px;
-      }
+  width: 100%;
+  height: 160px; /* samakan tinggi semua gambar */
+  object-fit: cover; /* isi penuh, bisa sedikit terpotong */
+  border-radius: 12px;
+  display: block;
+}
+      
+      
       .target-card {
         background: var(--surface);
         border: 1px solid var(--border);
@@ -1455,7 +1457,7 @@
       <div class="hero-content">
         <div>
           <div class="hero-badge">
-            ● E-POS AuliaSoft Online – Product Knowledge
+             E-POS AuliaSoft – Product Knowledge
           </div>
           <h1>Aplikasi Kasir Modern <span>untuk Semua Usaha</span></h1>
           <p>
@@ -1479,8 +1481,8 @@
           </div>
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-num">53+</span
-              ><span class="stat-label">Testimoni Verified</span>
+              <span class="stat-num">2000+</span
+              ><span class="stat-label">Klien Aktif</span>
             </div>
             <div class="stat-item">
               <span class="stat-num">5.0</span
@@ -1538,23 +1540,6 @@
               <div class="progress-fill" style="width: 92%"></div>
             </div>
           </div>
-          <div class="app-card">
-            <div class="app-card-header">
-              <div
-                class="app-icon"
-                style="background: rgba(253, 121, 168, 0.2)"
-              >
-                🌐
-              </div>
-              <div>
-                <h4>Multi Bahasa</h4>
-                <p>16 bahasa tersedia</p>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 100%"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1575,7 +1560,7 @@
           <!-- PROMO -->
           <div class="pricing-card">
             <div class="pricing-badge">🔥 PROMO</div>
-            <div class="pricing-name">Versi Promo</div>
+            <div class="pricing-name">PROMO UMKM</div>
             <div class="pricing-price">
               <span class="amount">Rp 50.000</span><br />
               <span class="period">per bulan</span>
@@ -1586,6 +1571,7 @@
               <li>Manajemen Inventori Dasar</li>
               <li>Laporan Penjualan</li>
               <li>Dukungan via WhatsApp</li>
+              <li> Maks. 500 item</li>
             </ul>
             <a
               href="https://pos.auliasoft.com/business/register"
@@ -1599,6 +1585,7 @@
             <div class="pricing-name">Basic</div>
             <div class="pricing-price">
               <span class="amount">Rp 149.999</span><br />
+              <span class="period">per bulan</span>
             </div>
             <ul class="pricing-features">
               <li>Single outlet</li>
@@ -1624,16 +1611,18 @@
             <div class="pricing-name">Standar</div>
             <div class="pricing-price">
               <span class="amount">Rp 349.999</span><br />
+              <span class="period">per bulan</span>
             </div>
             <ul class="pricing-features">
               <li>Multi outlet</li>
               <li>Toko Online</li>
-              <li>Kasir Online (Atur meja, multisatuan)</li>
-              <li>Inventori (COGS average, Produksi stok)</li>
-              <li>CRM + Deposit Pelanggan</li>
-              <li>Laporan Lengkap + Analisa Bisnis</li>
-              <li>Akuntansi Lengkap (CoA, Auto Posting)</li>
-              <li>QRIS Dynamic, EDC, Struk Digital</li>
+              <li>Aplikasi Kasir Online (Atur meja, multisatuan)</li>
+              <li>Manajement Inventori (COGS average, Produksi stok, transfer stok antar outlet)</li>
+              <li>CRM (Deposit Pelanggan)</li>
+              <li>Laporan Lengkap (Analisa Bisnis)</li>
+              <li>Manajemen Karyawan (Absensi foto, otorisasi advance)</li>
+              <li>Akuntansi Lengkap (Faktur, CoA, Auto Posting, Laporan Akuntansi)</li>
+              <li>Digital Payment(QRIS Dynamis, EDC(Kartu Debit Kredit), Struk Digital : Whatsapp, SMS, Email)</li>
               <li>Aplikasi Owner</li>
               <li>Order Online</li>
             </ul>
@@ -1649,17 +1638,21 @@
             <div class="pricing-name">Premium</div>
             <div class="pricing-price">
               <span class="amount">Rp 749.999</span><br />
+              <span class="period">per bulan</span>
             </div>
             <ul class="pricing-features">
               <li>Multi outlet</li>
-              <li>Toko Online + Marketplace Omnichannel</li>
-              <li>Kasir (Reservasi, Serial, Batch, Grosir)</li>
-              <li>Inventori Lengkap + Permintaan Barang</li>
-              <li>Manajemen Karyawan & Payroll</li>
-              <li>Akuntansi Lengkap</li>
-              <li>QRIS Dynamic, EDC, Struk Digital</li>
-              <li>Grabfood, Gofood, QR Emenu</li>
-              <li>Aulia Teams (Absensi Geolokasi, ePayslip)</li>
+              <li>Toko Online(Website, Webtree, Weborder, Opsi Premium Domain, Shopee, Tokopedia, Grabmart, Multiakun Marketplace Omnichannel)</li>
+              <li>Aplikasi Kasir Online(Atur meja, Multisatuan, Reservasi & Produk Jasa, Leveling Komisi, Serial Number, Batch Number, Grosir)</li>
+              <li>Manajemen Inventori (COGS average, Fitur Produksi Stok, Transfer Stok antar Outlet, Serial Number, Batch Number, Permintaan Barang, Pengiriman Pembelian)</li>
+              <li>CRM(Deposit pelanggan)</li>
+              <li>Laporan Lengkap(Analisa bisnis)</li>
+              <li>Manajemen Karyawan dan Payroll(Absensi Foto, Otorisasi Advance, Data Karyawan, Shift Management, Struktur Gaji, Penggajian, Transfer Gaji)</li>
+              <li>Akuntansi Lengkap(Faktur, CoA, Auto Posting, Laporan Akuntansi)</li>
+              <li>Digital Payment(QRIS Dynamic, EDC (Kartu Debit Kredit), Struk Digital: WhatsApp, SMS, Email)</li>
+              <li>Aplikasi Owner</li>
+              <li>Order Online(Weborder, QR Emenu, Grabfood, Gofood)</li>
+              <li>Aulia Teams(Absensi Foto Geolokasi, ePayslip, Shift, Integrasi Rekening Bank, Broadcast Pengumuman)</li>
             </ul>
             <a
               href="https://pos.auliasoft.com/business/register"
@@ -1717,12 +1710,16 @@
                   font-size: 0.92rem;
                 "
               >
-                PT AuliaSoft adalah perusahaan software Indonesia yang telah
-                beroperasi sejak 2009, melayani ribuan pelaku usaha dari warung
-                kecil hingga koperasi besar di seluruh Indonesia. AuliaSoft
-                menghadirkan ekosistem digital yang komprehensif mencakup
-                aplikasi kasir, koperasi, LKM, BUMDes, dan berbagai solusi
-                keuangan lainnya.
+                Auliasoft membangun citra sebagai penyedia teknologi yang kuat
+                dan dapat dipercaya, terbukti dari pengalamannya melayani lebih
+                dari 2.000 klien, mulai dari UMKM hingga perusahaan besar. Brand
+                ini mengedepankan nilai profesionalitas dan keamanan, yang
+                diperkuat dengan legalitas resmi sebagai PT Mitra Aulia
+                Indonesia serta adanya garansi aplikasi selama 1,5 tahun. Selain
+                itu, dukungan melalui layanan Support Online dan akses Demo
+                Produk yang mudah semakin menegaskan posisinya sebagai mitra
+                yang terbuka, transparan, dan fokus pada kepuasan pelanggan
+                jangka panjang.
               </p>
 
               <div class="brand-item">
@@ -1740,10 +1737,7 @@
                 <div class="brand-icon">🌐</div>
                 <div>
                   <h4>Platform</h4>
-                  <p>
-                    Web-based (pos.auliasoft.com) – tersedia dalam 16 bahasa
-                    internasional
-                  </p>
+                  <p>Web-based (pos.auliasoft.com) internasional</p>
                 </div>
               </div>
 
@@ -1788,7 +1782,7 @@
         <h2 class="section-title">
           Domain Bisnis <span>E-POS AuliaSoft</span>
         </h2>
-        <p class="section-desc">
+        <p>
           Auliasoft (PT Mitra Aulia Indonesia) adalah perusahaan teknologi yang
           berfokus pada penyediaan Software Aplikasi Kasir Toko dan solusi
           manajemen ritel terintegrasi. Bidang usaha ini mencakup pengembangan
@@ -1812,15 +1806,7 @@
           </div>
           <div class="domain-card">
             <div class="domain-icon">🏘️</div>
-            <h4>BUMDes / KKMP</h4>
-          </div>
-          <div class="domain-card">
-            <div class="domain-icon">🏦</div>
-            <h4>LKM / Mini Bank</h4>
-          </div>
-          <div class="domain-card">
-            <div class="domain-icon">📿</div>
-            <h4>BMT / KSPPS</h4>
+            <h4>BUMDes</h4>
           </div>
           <div class="domain-card">
             <div class="domain-icon">🔧</div>
@@ -1894,18 +1880,6 @@
                 Bisa diakses dari PC, laptop, tablet, dan smartphone
               </p>
             </div>
-            <div>
-              <strong>🌍 Multi Bahasa</strong>
-              <p
-                style="
-                  color: var(--text-muted);
-                  font-size: 0.85rem;
-                  margin-top: 4px;
-                "
-              >
-                16 bahasa internasional mendukung operasional global
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -1918,9 +1892,14 @@
         <h2 class="section-title">
           Siapa yang <span>Menggunakan</span><br />E-POS AuliaSoft?
         </h2>
-        <p class="section-desc">
-          Dirancang untuk pelaku usaha Indonesia dari berbagai skala dan jenis
-          bisnis yang membutuhkan sistem kasir modern dan terpercaya.
+        <p>
+          Target utama sistem ini adalah pelaku UMKM yang menjalankan usaha
+          berbasis toko fisik, seperti toko kelontong, minimarket, klinik,
+          laundry, hingga toko bangunan. Selain itu, solusi ini juga menyasar
+          organisasi yang lebih kompleks seperti koperasi, BUMDes, dan UMKM yang
+          membutuhkan penyedia software dengan legalitas jelas (berbadan hukum
+          PT), serta sistem yang stabil untuk mengelola inventaris dan pesanan
+          pelanggan dalam satu platform yang praktis dan mudah digunakan.
         </p>
         <div class="target-grid reveal">
           <div class="target-card">
@@ -1935,15 +1914,15 @@
             <img src="gambar/koperasimerahputih.jpg.jpeg" class="target-img" />
             <h4>Pengurus Koperasi</h4>
             <p>
-              KSP, KSPPS, BMT, koperasi karyawan yang butuh sistem POS
+              koperasi karyawan yang butuh sistem POS
               terintegrasi
             </p>
           </div>
           <div class="target-card">
             <img src="gambar/bumdess.jpg.jpeg" class="target-img" />
-            <h4>Pengelola BUMDes & KKMP</h4>
+            <h4>Pengelola BUMDes</h4>
             <p>
-              Unit usaha desa dan Koperasi Kelurahan Merah Putih yang
+              Unit usaha desa yang
               membutuhkan digitalisasi
             </p>
           </div>
@@ -1962,114 +1941,98 @@
               POS untuk toko HP dengan device tracking dan manajemen garansi
             </p>
           </div>
-          <div class="target-card">
-            <img src="gambar/koperasimerahputih.jpg.jpeg" class="target-img" />
-            <h4>Sekolah & Koperasi Siswa</h4>
-            <p>
-              Mini Bank sekolah, koperasi pesantren, dan unit usaha pendidikan
-            </p>
-          </div>
         </div>
         <!-- Testimonials di Target Audience -->
-        <h3
-          style="
-            font-family: &quot;Playfair Display&quot;, serif;
-            font-size: 1.5rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-dark);
-          "
-        >
-          📣 Suara Klien E-POS & AuliaSoft
-        </h3>
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-          "
-        >
-          <div
-            style="
-              background: #fff;
-              border: 1px solid var(--border);
-              border-radius: 12px;
-              padding: 1.25rem;
-            "
-          >
-            <div style="color: var(--accent); margin-bottom: 0.5rem">★★★★★</div>
-            <p
-              style="
-                font-style: italic;
-                font-size: 0.88rem;
-                color: var(--text-muted);
-                margin-bottom: 0.75rem;
-              "
-            >
-              "Dengan sistem POS dari Aulia Soft, koperasi kami dapat mengetahui
-              stok barang, keuntungan penjualan, dan pelayanan kepada anggota
-              menjadi lebih rapi dan efisien."
+        <!-- TESTIMONIALS -->
+    <section class="testi-section" id="testimoni">
+      <div class="section-inner">
+        <div class="section-tag">Testimoni Klien</div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "TESTIMONI menggunakan aplikasi auliasoft dari tahun 2021. Pengalaman selama
+              menggunakan aplikasi AULIASOFT Saya menggunakan Aulia soft ini karna memang sudah kebutuhan 
+              untuk toko saya ,agar menghasilkan manajemen dan akuntabilitas terbaik, tidak terjadi kesalahan 
+              dan selip dalam perhitungan barang dan uang"
             </p>
-            <strong style="font-size: 0.85rem"
-              >Koperasi Insan Berkah Mandiri</strong
-            ><br /><span style="font-size: 0.78rem; color: var(--text-muted)"
-              >Verified ✓ | Oct 2025</span
-            >
+            <div class="testi-author">
+              <img
+                src="gambar/tokorahmi.jpg"
+                class="feature-img"
+              />
+              <div>
+                <div class="testi-name">Toko Rahmi</div>
+                <div class="testi-role">Pengguna Sejak 2021</div>
+                <div class="testi-badge">✓ Verified | Oct 2025</div>
+              </div>
+            </div>
           </div>
-          <div
-            style="
-              background: #fff;
-              border: 1px solid var(--border);
-              border-radius: 12px;
-              padding: 1.25rem;
-            "
-          >
-            <div style="color: var(--accent); margin-bottom: 0.5rem">★★★★★</div>
-            <p
-              style="
-                font-style: italic;
-                font-size: 0.88rem;
-                color: var(--text-muted);
-                margin-bottom: 0.75rem;
-              "
-            >
-              "Software Auliasoft sangat membantu pengelolaan manajemen toko,
-              stok barang penjualan, stock opname, serta laporan yang lengkap."
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "Aplikasi Aulia Soft sangat membantu dan mempermudah transaksi penjualan dan
+pembelian ditoko Kopkar Kelinci Makmur dan Tim Aulia Soft sangat fast respon dalam
+pendampingan penggunaan aplikasi dan penanganan masalah yg timbul dalam
+transaksi hariannya.."
             </p>
-            <strong style="font-size: 0.85rem"
-              >CV LAPKES MART – KPRI BALKES</strong
-            ><br /><span style="font-size: 0.78rem; color: var(--text-muted)"
-              >Verified ✓ | Oct 2025</span
-            >
+            <div class="testi-author">
+              <img src="gambar/tokokopkar.jpg" class="feature-img" />
+              <div>
+                <div class="testi-name">Toko Kopkar Kelinci Makmur</div>
+                <div class="testi-badge">✓ Verified | Oct 2025</div>
+              </div>
+            </div>
           </div>
-          <div
-            style="
-              background: #fff;
-              border: 1px solid var(--border);
-              border-radius: 12px;
-              padding: 1.25rem;
-            "
-          >
-            <div style="color: var(--accent); margin-bottom: 0.5rem">★★★★★</div>
-            <p
-              style="
-                font-style: italic;
-                font-size: 0.88rem;
-                color: var(--text-muted);
-                margin-bottom: 0.75rem;
-              "
-            >
-              "Penggunaan aplikasi Auliasoft untuk management toko sangat
-              membantu dan mudah dalam penggunaannya."
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "penggunaan aplikasi auliasoft sejak awal tahun 2024 untuk kegiatan management
+toko sangat membantu dan mudah dalam penggunaannya, saat terjadi kendala dalam
+penggunaan aplikasi tim auliasoft sangat responsif menanggapinya.."
             </p>
-            <strong style="font-size: 0.85rem">Toko Merdu Jaya Mart</strong
-            ><br /><span style="font-size: 0.78rem; color: var(--text-muted)"
-              >Verified ✓ | Oct 2025 (Pengguna sejak 2024)</span
-            >
+            <div class="testi-author">
+              <img
+                src="gambar/tokomerdujaya.jpg"
+                class="feature-img"
+              />
+              <div>
+                <div class="testi-name">Toko Merdu Jaya Mart</div>
+                <div class="testi-role">Pengguna Sejak 2024</div>
+                <div class="testi-badge">✓ Verified | Oct 2025</div>
+              </div>
+            </div>
           </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "Saya sebagai pengguna aplikasi Aulia soft sangat terbantu dgn kesibukan ditoko, walaupun blum terlalu bisa, trimakasih Aulia soft dgn semua timnya yg sering membantu"
+            </p>
+            <div class="testi-author">
+              <img src="gambar/tokonazril.jpg" class="feature-img" />
+              <div>
+                <div class="testi-name">Toko Nazril BNS</div>
+                <div class="testi-badge">✓ Verified | Oct 2025</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem">
+          <a
+            href="https://www.auliasoft.com/testimoni?search=toko&rating=0&sort=terbaru"
+            target="_blank"
+            style="
+              color: #4bbf76;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 0.9rem;
+            "
+            >Lihat Semua Testimoni →</a
+          >
         </div>
       </div>
     </section>
+      
 
     <!-- E. FEATURES -->
     <section class="features-section" id="features">
@@ -2082,7 +2045,7 @@
         </p>
         <div class="features-grid reveal">
           <div class="feature-card">
-            <img src="gambar/log.png" class="feature-img" />
+            <img src="gambar/login.png" class="feature-img" />
             <h3>Login Multi-User</h3>
             <p>
               Sistem login multi-level dengan hak akses berbeda: Admin, Kasir,
@@ -2797,149 +2760,7 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="testi-section" id="testimoni">
-      <div class="section-inner">
-        <div class="section-tag">D · Testimoni Klien</div>
-        <h2 class="section-title" style="color: #fff">
-          Dipercaya <span style="color: #4bbf76">53+ Klien</span> Verified
-        </h2>
-        <div class="rating-summary">
-          <div class="big-rating">5.0</div>
-          <div>
-            <div class="stars">★★★★★</div>
-            <div class="rating-detail">
-              dari 53 testimoni terverifikasi<br />0 review negatif
-            </div>
-          </div>
-        </div>
-        <div class="testi-grid">
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Alhamdulillah sudah menggunakan aplikasi Auliasoft sejak tahun
-              2015 dan merasa bersyukur karena sangat terbantu sekali dalam
-              penyajian laporan keuangan yang lengkap."
-            </p>
-            <div class="testi-author">
-              <img
-                src="gambar/Koperasi Sahabat Syariah Sejahtera.jpg"
-                class="feature-img"
-              />
-              <div>
-                <div class="testi-name">Koperasi Sahabat Syariah Sejahtera</div>
-                <div class="testi-role">Pengguna Sejak 2015</div>
-                <div class="testi-badge">✓ Verified | Oct 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Dari tahun 2009 sudah menggunakan Aulia Software, awal transaksi
-              manual hingga saat ini sudah ONLINE, dan semua fitur sangat
-              lengkap dan support cepat."
-            </p>
-            <div class="testi-author">
-              <img src="gambar/Koppontren Al Fatah.jpg" class="feature-img" />
-              <div>
-                <div class="testi-name">Koppontren Al Fatah</div>
-                <div class="testi-role">Pengguna Sejak 2009 (16 Tahun)</div>
-                <div class="testi-badge">✓ Verified | Oct 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Sudah 8 tahun menggunakan aplikasi Auliasoft, sangat merasa
-              nyaman karena mudah dipahami dan respon maintenance sangat cepat
-              dan pelayanan prima."
-            </p>
-            <div class="testi-author">
-              <img
-                src="gambar/Koperasi Jasa LKM Mandira Rajabasa.jpg"
-                class="feature-img"
-              />
-              <div>
-                <div class="testi-name">Koperasi Jasa LKM Mandira Rajabasa</div>
-                <div class="testi-role">Pengguna 8 Tahun</div>
-                <div class="testi-badge">✓ Verified | Oct 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "WOW… Minimal Harganya Maksimal Performanya. Ramah dan Cepat
-              respon support systemnya. Aplikasinya mudah digunakan bahkan oleh
-              staf baru sekalipun!"
-            </p>
-            <div class="testi-author">
-              <img src="gambar/Abdurrahman, M.Pd.jpg" class="feature-img" />
-              <div>
-                <div class="testi-name">Abdurrahman, M.Pd</div>
-                <div class="testi-role">
-                  Ketua – Koperasi Konsumen Ukhuwah Cipta Madani
-                </div>
-                <div class="testi-badge">✓ Verified | Oct 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Tim Support AuliaSoft sangat responsif, komunikatif, dan
-              profesional. Pendampingannya jelas dan kami sangat merasa terbantu
-              dalam penggunaan aplikasi."
-            </p>
-            <div class="testi-author">
-              <img
-                src="gambar/KKMP Latsari Kecamatan Tuban.jpg"
-                class="feature-img"
-              />
-              <div>
-                <div class="testi-name">KKMP Latsari Kecamatan Tuban</div>
-                <div class="testi-role">Koperasi Kelurahan Merah Putih</div>
-                <div class="testi-badge">✓ Verified | Jan 2026</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Dengan menggunakan Aplikasi AuliaSoft, laporan keuangan jadi
-              lebih teliti, mudah, dan cepat sehingga RAT dapat dilaksanakan
-              tepat waktu."
-            </p>
-            <div class="testi-author">
-              <img
-                src="gambar/KSU Al Wazro Aisyiyah Martapura.jpg"
-                class="feature-img"
-              />
-              <div>
-                <div class="testi-name">KSU Al Wazro Aisyiyah Martapura</div>
-                <div class="testi-role">Koperasi Syariah</div>
-                <div class="testi-badge">✓ Verified | Oct 2025</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 2rem">
-          <a
-            href="https://www.auliasoft.com/testimoni"
-            target="_blank"
-            style="
-              color: #4bbf76;
-              text-decoration: none;
-              font-weight: 700;
-              font-size: 0.9rem;
-            "
-            >Lihat Semua 53 Testimoni →</a
-          >
-        </div>
-      </div>
-    </section>
+    
 
     <!-- G. FAQ -->
     <section class="faq-section" id="faq">
@@ -2959,8 +2780,8 @@
             </button>
             <div class="faq-a">
               Ya, E-POS AuliaSoft adalah aplikasi berbasis web (cloud) yang
-              dapat diakses dari browser di perangkat apapun – PC, laptop,
-              tablet, maupun smartphone selama terhubung ke internet.
+              dapat diakses dari perangkat apapun – PC, laptop,
+              tablet, maupun smartphone.
             </div>
           </div>
           <div class="faq-item">
@@ -2975,13 +2796,29 @@
           </div>
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFaq(this)">
-              Apakah data saya aman tersimpan di cloud?
+              Apakah E-POS Auliasoft bisa digunakan saat offline?
               <span class="arrow">▼</span>
             </button>
             <div class="faq-a">
-              Ya. Data Anda disimpan dengan sistem keamanan enkripsi dan backup
-              otomatis. AuliaSoft berkomitmen menjaga kerahasiaan dan keamanan
-              data seluruh klien.
+              Ya, aplikasi dapat digunakan secara offline dan akan tersinkronisasi saat kembali online.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Bagaimana pembayaran berlangganan?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+              Kamu bisa transfer ke REK. BANK BRI 789001005408534 an PT MITRA AULIA INDONESIA
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Apakah ada pelatihan atau pendampingan saat implementasi?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+              Ya. AuliaSoft menyediakan pendampingan implementasi melalui WhatsApp, remote support, dan konsultasi online. Tim support AuliaSoft dikenal responsif dan profesional, siap membantu proses onboarding.
             </div>
           </div>
           <div class="faq-item">
@@ -2989,7 +2826,7 @@
               Apakah tersedia masa trial/percobaan? <span class="arrow">▼</span>
             </button>
             <div class="faq-a">
-              Anda dapat langsung mendaftar dan mencoba E-POS AuliaSoft melalui
+              Ada selama 14 hari dan Anda dapat langsung mendaftar dan mencoba E-POS AuliaSoft melalui
               pos.auliasoft.com. Untuk informasi lebih lanjut mengenai masa
               trial, silakan hubungi tim kami via WhatsApp 0812-4194-5881.
             </div>
@@ -3000,8 +2837,8 @@
               <span class="arrow">▼</span>
             </button>
             <div class="faq-a">
-              Ya. Paket Basic Plus mendukung hingga 5 lokasi bisnis dalam satu
-              akun. Paket Standar dan Premium juga mendukung multi-lokasi untuk
+              Ya. Paket Standar mendukung multi-outlet bisnis dalam satu
+              akun. Paket Premium juga mendukung multi-outlet untuk
               bisnis dengan beberapa cabang.
             </div>
           </div>
@@ -3015,17 +2852,6 @@
               penggunaan aplikasi. Banyak klien kami melaporkan bahwa
               pendampingannya responsif, komunikatif, dan profesional sehingga
               staf baru pun cepat menguasai sistem.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              Apakah bisa digunakan untuk koperasi dan BUMDes?
-              <span class="arrow">▼</span>
-            </button>
-            <div class="faq-a">
-              Tentu. E-POS AuliaSoft telah digunakan secara luas oleh koperasi
-              (KSP, KSPPS, BMT), BUMDes, KKMP, LKM, dan berbagai jenis lembaga
-              keuangan mikro di seluruh Indonesia.
             </div>
           </div>
           <div class="faq-item">
@@ -3051,92 +2877,84 @@
           Product Roadmap <span>Pengembangan E-POS</span>
         </h2>
         <p class="section-desc">
-          Tingkatan fitur dari Basic hingga Premium untuk mendukung pertumbuhan
-          bisnis Anda secara bertahap.
+          Peta pengembangan fitur E-POS AuliaSoft dari versi basic hingga premium, memastikan pertumbuhan bisnis Anda terfasilitasi di setiap tahap.
         </p>
         <div class="roadmap-grid reveal">
           <div class="roadmap-card basic">
             <div class="roadmap-tier">Level 1</div>
             <h3>Basic</h3>
-            <div class="roadmap-price">Rp 149.999 / bulan</div>
             <h3>Operasional Dasar</h3>
             <p>
               Cocok untuk bisnis single outlet yang baru mulai digitalisasi
               kasir.
             </p>
             <ul class="roadmap-features">
+              <li><span class="dot"></span>Single Outlet</li>
+              <li><span class="dot"></span>Toko Online</li>
               <li><span class="dot"></span>Aplikasi Kasir Online</li>
               <li><span class="dot"></span>Manajemen Inventori Dasar</li>
-              <li><span class="dot"></span>Toko Online</li>
-              <li><span class="dot"></span>CRM Pelanggan</li>
-              <li><span class="dot"></span>Laporan Stok & Penjualan</li>
-              <li><span class="dot"></span>Laporan Pembelian</li>
+              <li><span class="dot"></span>CRM</li>
+              <li><span class="dot"></span>Laporan Lengkap</li>
+              <li><span class="dot"></span>Manajemen Karyawan</li>
               <li>
                 <span class="dot"></span>Pencatatan Keuangan (Invoice, SO, DO)
               </li>
               <li><span class="dot"></span>Digital Payment (QRIS)</li>
-              <li><span class="dot"></span>Manajemen Karyawan Dasar</li>
-              <li><span class="dot"></span>Single Outlet</li>
             </ul>
           </div>
           <div class="roadmap-card standard">
             <div class="roadmap-tier">Level 2</div>
             <h3>Standar</h3>
-            <div class="roadmap-price">Rp 349.999 / bulan</div>
             <h3>Bisnis Berkembang</h3>
             <p>
               Untuk bisnis dengan banyak outlet yang butuh fitur akuntansi dan
               analisa bisnis.
             </p>
             <ul class="roadmap-features">
-              <li><span class="dot"></span>Semua fitur Basic +</li>
               <li><span class="dot"></span>Multi Outlet</li>
+              <li><span class="dot"></span>Toko Online</li>
               <li>
                 <span class="dot"></span>Kasir Online (Atur Meja, Multisatuan)
               </li>
-              <li><span class="dot"></span>COGS Average & Produksi Stok</li>
-              <li><span class="dot"></span>Transfer Stok Antar Outlet</li>
+              <li><span class="dot"></span>Manajement Inventori (COGS average, Produksi stok, transfer stok antar outlet)</li>
               <li><span class="dot"></span>CRM + Deposit Pelanggan</li>
+              <li><span class="dot"></span>Laporan Lengkap (Analisa Bisnis)</li>
+              <li><span class="dot"></span>Manajemen Karyawan (Absensi foto, otorisasi advance)</li>
               <li>
-                <span class="dot"></span>Akuntansi Lengkap (CoA, Auto Posting)
+                <span class="dot"></span>Akuntansi Lengkap (Faktur, CoA, Auto Posting, Laporan Akuntansi)
               </li>
-              <li><span class="dot"></span>Laporan Akuntansi Lengkap</li>
-              <li><span class="dot"></span>QRIS Dynamic, EDC, Struk Digital</li>
-              <li><span class="dot"></span>Aplikasi Owner & Order Online</li>
-              <li><span class="dot"></span>Absensi Foto & Otorisasi Advance</li>
-              <li><span class="dot"></span>Analisa Bisnis Dashboard</li>
+              <li><span class="dot"></span>Digital Payment(QRIS Dynamis, EDC(Kartu Debit Kredit), Struk Digital : Whatsapp, SMS, Email)</li>
+              <li><span class="dot"></span>Aplikasi Owner</li>
+              <li><span class="dot"></span>& Order Online</li>
             </ul>
           </div>
           <div class="roadmap-card premium">
             <div class="roadmap-tier">Level 3</div>
             <h3>Premium</h3>
-            <div class="roadmap-price">Rp 749.999 / bulan</div>
             <h3>Bisnis Skala Besar</h3>
             <p>
               Untuk bisnis yang butuh integrasi marketplace, payroll, dan fitur
               enterprise.
             </p>
             <ul class="roadmap-features">
-              <li><span class="dot"></span>Semua fitur Standard +</li>
+              <li><span class="dot"></span>Multi outlet</li>
               <li>
-                <span class="dot"></span>Omnichannel (Shopee, Tokopedia,
-                GrabMart)
+                <span class="dot"></span>Toko Online(Website, Webtree, Weborder, Opsi Premium Domain, Shopee, Tokopedia, Grabmart, Multiakun Marketplace Omnichannel)
               </li>
-              <li><span class="dot"></span>Domain Premium Website</li>
-              <li><span class="dot"></span>Serial Number & Batch Number</li>
-              <li><span class="dot"></span>Reservasi & Produk Jasa</li>
-              <li><span class="dot"></span>Leveling Komisi & Grosir</li>
+              <li><span class="dot"></span>Aplikasi Kasir Online(Atur meja, Multisatuan, Reservasi & Produk Jasa, Leveling Komisi, Serial Number, Batch Number, Grosir)</li>
+              <li><span class="dot"></span>Manajemen Inventori (COGS average, Fitur Produksi Stok, Transfer Stok antar Outlet, Serial Number, Batch Number, Permintaan Barang, Pengiriman Pembelian)</li>
+              <li><span class="dot"></span>CRM(Deposit pelanggan)</li>
+              <li><span class="dot"></span>Laporan Lengkap(Analisa bisnis)</li>
               <li>
-                <span class="dot"></span>Permintaan Barang & Pengiriman
-                Pembelian
+                <span class="dot"></span>Manajemen Karyawan dan Payroll(Absensi Foto, Otorisasi Advance, Data Karyawan, Shift Management, Struktur Gaji, Penggajian, Transfer Gaji)
               </li>
-              <li><span class="dot"></span>Manajemen Payroll Lengkap</li>
+              <li><span class="dot"></span>Akuntansi Lengkap(Faktur, CoA, Auto Posting, Laporan Akuntansi)</li>
               <li>
-                <span class="dot"></span>Aulia Teams (Absensi Geolokasi,
-                ePayslip)
+                <span class="dot"></span>Digital Payment(QRIS Dynamic, EDC (Kartu Debit Kredit), Struk Digital: WhatsApp, SMS, Email)
               </li>
-              <li><span class="dot"></span>Grabfood, Gofood, QR Emenu</li>
-              <li><span class="dot"></span>Shift Management & Struktur Gaji</li>
+              <li><span class="dot"></span>Aplikasi Owner</li>
+              <li><span class="dot"></span>Order Online(Weborder, QR Emenu, Grabfood, Gofood)</li>
+              <li><span class="dot"></span>Aulia Teams(Absensi Foto Geolokasi, ePayslip, Shift, Integrasi Rekening Bank, Broadcast Pengumuman)</li>
             </ul>
           </div>
         </div>
@@ -3150,57 +2968,36 @@
         <h2 class="section-title">
           Layanan <span>Kustomisasi</span> untuk Kebutuhan Spesifik
         </h2>
-        <p class="section-desc">
-          AuliaSoft menawarkan layanan penyesuaian fitur aplikasi untuk memenuhi
-          kebutuhan unik bisnis Anda yang tidak tercakup dalam paket standar.
+        <p>
+          Auliasoft menawarkan fleksibilitas kustomisasi yang tinggi agar sistem dapat disesuaikan dengan kebutuhan operasional berbagai jenis usaha. Pemilik bisnis dapat mengatur input data sesuai bidang usahanya, mulai dari retail (toko warung), klinik, hingga Badan Usaha Milik Desa, sehingga kategori produk dan alur pencatatan stok bisa disesuaikan dengan karakteristik masing-masing bisnis.
         </p>
         <div class="custom-grid reveal">
           <div class="custom-card">
             <div class="custom-num">01</div>
-            <h4>Kustomisasi Laporan</h4>
+            <h4>Kustomisasi Identitas Toko</h4>
             <p>
-              Desain format laporan keuangan, stok, atau penjualan sesuai
-              kebutuhan internal perusahaan atau standar audit yang berlaku.
+              Nama toko, nomor telepon, alamat, dan link media sosial.
             </p>
           </div>
           <div class="custom-card">
             <div class="custom-num">02</div>
-            <h4>Integrasi Sistem</h4>
+            <h4>Kustomisasi Branding Struk</h4>
             <p>
-              Integrasi E-POS dengan sistem akuntansi, ERP, atau platform pihak
-              ketiga yang sudah digunakan bisnis Anda saat ini.
+              Upload logo & kustomisasi pesan header/footer struk belanja pelanggan.
             </p>
           </div>
           <div class="custom-card">
             <div class="custom-num">03</div>
-            <h4>Modul Tambahan</h4>
+            <h4>Kustomisasi Tema Visual Aplikasi</h4>
             <p>
-              Pengembangan modul khusus seperti manajemen member, program
-              loyalitas, notifikasi WhatsApp otomatis, dan fitur unik lainnya.
+              Pilih skema warna yang selaras dengan branding bisnis Anda.
             </p>
           </div>
           <div class="custom-card">
             <div class="custom-num">04</div>
-            <h4>Kustomisasi Tampilan</h4>
+            <h4>Kustomisasi Domain Toko Online</h4>
             <p>
-              Sesuaikan antarmuka, logo, dan warna aplikasi dengan identitas
-              brand bisnis Anda untuk pengalaman yang lebih personal.
-            </p>
-          </div>
-          <div class="custom-card">
-            <div class="custom-num">05</div>
-            <h4>Multi Cabang Khusus</h4>
-            <p>
-              Konfigurasi khusus untuk bisnis dengan struktur cabang yang
-              kompleks, termasuk konsolidasi laporan antar cabang.
-            </p>
-          </div>
-          <div class="custom-card">
-            <div class="custom-num">06</div>
-            <h4>Pelatihan Tim Khusus</h4>
-            <p>
-              Program pelatihan on-site atau online yang disesuaikan dengan
-              jumlah staf dan kebutuhan spesifik operasional bisnis Anda.
+              Website toko dengan nama domain milik Anda sendiri.
             </p>
           </div>
         </div>
@@ -3243,132 +3040,24 @@
           Keunggulan <span>E-POS AuliaSoft</span><br />vs Kompetitor
         </h2>
         <p class="section-desc">
-          Perbandingan jujur antara E-POS AuliaSoft dengan solusi kasir
-          kompetitor di Indonesia.
+          Perbandingan antara E-POS AuliaSoft dengan kompetitor lain
         </p>
-        <div class="comp-table-wrap reveal">
-          <table class="comp-table">
-            <thead>
-              <tr>
-                <th>Aspek Perbandingan</th>
-                <th class="our">E-POS AuliaSoft ⭐</th>
-                <th>Accurate POS</th>
-                <th>Olsera POS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Harga Mulai</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Rp 50.000/bln (Promo)
-                  <span class="comp-highlight">TERMURAH</span>
-                </td>
-                <td>Lebih mahal, tergantung paket</td>
-                <td>Tergantung paket berlangganan</td>
-              </tr>
-              <tr>
-                <td><strong>Basis Teknologi</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Cloud SaaS + Web App
-                </td>
-                <td>Desktop + Cloud</td>
-                <td>Cloud / App</td>
-              </tr>
-              <tr>
-                <td><strong>Modul Koperasi & BUMDes</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Tersedia lengkap
-                </td>
-                <td><span class="cross">✗</span> Tidak spesifik</td>
-                <td><span class="cross">✗</span> Tidak spesifik</td>
-              </tr>
-              <tr>
-                <td><strong>Modul Akuntansi</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Terintegrasi (Standar+)
-                </td>
-                <td><span class="check">✓</span> Tersedia</td>
-                <td>Terbatas</td>
-              </tr>
-              <tr>
-                <td><strong>Modul Repair/Servis</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Tersedia (Premium)
-                </td>
-                <td>Tidak tersedia</td>
-                <td>Tidak tersedia</td>
-              </tr>
-              <tr>
-                <td><strong>Garansi Layanan</strong></td>
-                <td class="our"><span class="check">✓</span> 1,5 Tahun</td>
-                <td>Bergantung paket</td>
-                <td>Bergantung paket</td>
-              </tr>
-              <tr>
-                <td><strong>Support 24/7 via WA</strong></td>
-                <td class="our"><span class="check">✓</span> Ya, responsif</td>
-                <td>Jam kerja</td>
-                <td>Jam kerja</td>
-              </tr>
-              <tr>
-                <td><strong>Multi Bahasa</strong></td>
-                <td class="our"><span class="check">✓</span> 16 Bahasa</td>
-                <td>Terbatas</td>
-                <td>Terbatas</td>
-              </tr>
-              <tr>
-                <td><strong>Mitra Pemerintah (Kemenkop)</strong></td>
-                <td class="our"><span class="check">✓</span> Resmi bermitra</td>
-                <td><span class="cross">–</span></td>
-                <td><span class="cross">–</span></td>
-              </tr>
-              <tr>
-                <td><strong>Pengalaman di Indonesia</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> Sejak 2009 (16+ tahun)
-                </td>
-                <td>Sejak 1999 (akuntansi)</td>
-                <td>Sejak ~2015</td>
-              </tr>
-              <tr>
-                <td><strong>Rating Kepuasan</strong></td>
-                <td class="our">
-                  <span class="check">✓</span> 5.0/5.0 (53 review verified)
-                </td>
-                <td>Beragam</td>
-                <td>Beragam</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          style="
-            margin-top: 1.5rem;
-            background: var(--accent2);
-            border-radius: 12px;
-            padding: 1.25rem;
-            border-left: 4px solid var(--primary);
-          "
-        >
-          <p style="font-size: 0.88rem; color: var(--text-muted)">
-            ⚠️ <strong>Catatan:</strong> Perbandingan di atas dibuat berdasarkan
-            informasi yang tersedia secara publik dari masing-masing website
-            kompetitor. Untuk keakuratan terkini, disarankan mengunjungi
-            langsung
-            <a
-              href="https://accurate.id"
-              target="_blank"
-              style="color: var(--primary)"
-              >accurate.id</a
-            >
-            dan
-            <a
-              href="https://www.olsera.com"
-              target="_blank"
-              style="color: var(--primary)"
-              >olsera.com</a
-            >.
-          </p>
+        <p>
+          Di tengah persaingan aplikasi POS berbasis langganan seperti Moka dan
+          Majoo, Auliasoft memposisikan diri sebagai alternatif yang lebih
+          efisien dengan biaya terjangkau tanpa beban bulanan tinggi.
+          Keunggulannya terletak pada kekuatan ekosistem dan kolaborasi
+          strategis. Berbeda dari kompetitor yang cenderung berdiri sendiri,
+          Auliasoft telah menjalin kerja sama dengan lima ekosistem digital
+          besar, termasuk instansi resmi seperti Kemenkop. Kemitraan ini
+          menunjukkan bahwa sistem Auliasoft memenuhi standar integrasi dan
+          keamanan yang diakui secara luas. Dengan efisiensi biaya tersebut,
+          Auliasoft menawarkan nilai lebih berupa legalitas PT yang jelas,
+          dukungan teknis resmi, serta validasi dari mitra strategis tingkat
+          nasional
+        </p>
+        <div class="brand-app-screen">
+          <img src="gambar/Mitra.avif" alt="E-POS AuliaSoft Dashboard" />
         </div>
       </div>
     </section>
@@ -3381,92 +3070,55 @@
           Produk Pelengkap dari <span>AuliaSoft</span>
         </h2>
         <p class="section-desc">
-          Lengkapi bisnis Anda dengan ekosistem produk digital AuliaSoft yang
-          saling terintegrasi.
+          Lengkapi bisnis Anda dengan produk pelengkap untuk mendukung aktifitas kasir anda
         </p>
         <div class="comp-prod-grid reveal">
-          <div class="comp-prod-card">
-            <div class="comp-prod-img">
-              <img src="gambar/koperasi.png" alt="Aplikasi Koperasi" />
-            </div>
-            <div class="comp-prod-body">
-              <h4>Aplikasi Koperasi KSP / KSPPS</h4>
-              <p>
-                Sistem manajemen koperasi simpan pinjam lengkap – ekosistem
-                digital hybrid dengan 4 aplikasi utama. Terintegrasi penuh
-                dengan E-POS untuk unit usaha koperasi.
-              </p>
-              <div class="comp-prod-price">Rp 1.500.000 / lisensi</div>
-            </div>
-          </div>
-          <div class="comp-prod-card">
-            <div class="comp-prod-img">
-              <img src="gambar/koperasi.png" alt="Aplikasi Koperasi" />
-            </div>
-            <div class="comp-prod-body">
-              <h4>Mini Bank / Core Banking</h4>
-              <p>
-                Solusi Core Banking System untuk KSP/KSPPS besar yang ingin
-                memberikan layanan setara perbankan. Ideal untuk koperasi yang
-                memiliki unit simpan pinjam besar.
-              </p>
-              <div class="comp-prod-price">Rp 2.500.000 / lisensi</div>
-            </div>
-          </div>
-          <div class="comp-prod-card">
-            <div class="comp-prod-img">
-              <img src="gambar/koperasi.png" alt="Aplikasi Koperasi" />
-            </div>
-            <div class="comp-prod-body">
-              <h4>Aplikasi BUMDes / KOPDES KDMP</h4>
-              <p>
-                Sistem pengelolaan Badan Usaha Milik Desa dan Koperasi Desa
-                Merah Putih. Bermitra resmi dengan Kementerian Koperasi RI dan
-                program KOPDES KDMP nasional.
-              </p>
-              <div class="comp-prod-price">Rp 1.500.000 / lisensi</div>
-            </div>
-          </div>
-          <div class="comp-prod-card">
-            <div class="comp-prod-img">
-              <img src="gambar/koperasi.png" alt="Aplikasi Koperasi" />
-            </div>
-            <div class="comp-prod-body">
-              <h4>Aplikasi LAZIS</h4>
-              <p>
-                Sistem pengelolaan lembaga amil zakat, infaq, dan sedekah.
-                Manajemen muzakki, mustahiq, program penyaluran, dan laporan
-                keuangan syariah yang lengkap.
-              </p>
-              <div class="comp-prod-price">Rp 1.500.000 / lisensi</div>
-            </div>
-          </div>
-          <div class="comp-prod-card">
-            <div class="comp-prod-img">
-              <img src="gambar/koperasi.png" alt="Aplikasi Koperasi" />
-            </div>
-            <div class="comp-prod-body">
-              <h4>Jasa Pembuatan Website</h4>
-              <p>
-                Layanan pembuatan website profesional untuk UMKM, koperasi, dan
-                lembaga keuangan. Website responsif, SEO-friendly, dan
-                terintegrasi dengan sistem AuliaSoft.
-              </p>
-              <div class="comp-prod-price">Harga Tergantung Kebutuhan</div>
-            </div>
-          </div>
           <div class="comp-prod-card">
             <div class="comp-prod-img">
               <img src="gambar/scanner.webp" alt="Aplikasi Koperasi" />
             </div>
             <div class="comp-prod-body">
-              <h4>Hardware POS</h4>
+              <h4>Scanner Barcode Kasir</h4>
               <p>
-                Perangkat keras pendukung kasir: printer struk thermal, barcode
-                scanner, cash drawer, dan touchscreen display yang kompatibel
-                penuh dengan E-POS AuliaSoft.
+                Untuk membaca kode barang berupa kode barcode dari parbrik pembuat barang
               </p>
-              <div class="comp-prod-price">Harga Sesuai Spesifikasi</div>
+              <div class="comp-prod-price">Rp 700.000</div>
+            </div>
+          </div>
+          <div class="comp-prod-card">
+            <div class="comp-prod-img">
+              <img src="gambar/laci.jpg" alt="Aplikasi Koperasi" />
+            </div>
+            <div class="comp-prod-body">
+              <h4>Cash Drawer</h4>
+              <p>
+                Untuk simpan uang kasir, terbuka setelah cetak struk penjualan, dan punya kunci manual
+              </p>
+              <div class="comp-prod-price">Rp 650.000</div>
+            </div>
+          </div>
+          <div class="comp-prod-card">
+            <div class="comp-prod-img">
+              <img src="gambar/printerstruk.jpg" alt="Aplikasi Koperasi" />
+            </div>
+            <div class="comp-prod-body">
+              <h4>Printer Struk 58 kasir</h4>
+              <p>
+                Untuk mencetak bukti penjualan kasir berupa struk penjualan
+              </p>
+              <div class="comp-prod-price">Rp 500.000 </div>
+            </div>
+          </div>
+          <div class="comp-prod-card">
+            <div class="comp-prod-img">
+              <img src="gambar/PPOB-A.webp" alt="Aplikasi Koperasi" />
+            </div>
+            <div class="comp-prod-body">
+              <h4>Payment Point Online Bank</h4>
+              <p>
+                PPOB adalah sistem pembayaran elektronik untuk berbagai tagihan bulanan (PLN, PDAM, BPJS, Telkom) dan pembelian produk digital (pulsa, kuota, token listrik) yang terhubung secara real-time dengan jaringan perbankan atau lembaga keuangan.
+              </p>
+              
             </div>
           </div>
         </div>
@@ -3481,101 +3133,62 @@
           Proses & <span>Kebijakan</span> E-POS AuliaSoft
         </h2>
         <p class="section-desc">
-          Transparansi penuh dalam proses pengujian, pemesanan, dan kebijakan
-          layanan E-POS AuliaSoft.
+          Proses pemesanan, testing, implementasi, dan kebijakan yang berlaku untuk layanan E-POS AuliaSoft.
         </p>
         <div class="process-grid reveal">
           <div class="process-block">
-            <h3>🚀 Proses Order & Onboarding</h3>
+            <h3>🚀 Proses Order & implementasi</h3>
             <div class="step-list">
               <div class="step-item">
                 <div class="step-num">1</div>
                 <div class="step-content">
-                  <h5>Konsultasi Awal</h5>
+                  <h5>Konsultasi & Pemilihan Paket</h5>
                   <p>
-                    Hubungi tim AuliaSoft via WhatsApp (0812-4194-5881) atau
-                    kunjungi pos.auliasoft.com untuk mendapatkan informasi
-                    produk dan rekomendasi paket.
+                    Hubungi tim AuliaSoft melalui WhatsApp (0812-4194-5881) atau daftar langsung di pos.auliasoft.com untuk mendiskusikan kebutuhan bisnis dan memilih paket yang tepat.
                   </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-num">2</div>
                 <div class="step-content">
-                  <h5>Pilih Paket & Daftar</h5>
+                  <h5>Pendaftaran & Aktivasi Akun</h5>
                   <p>
-                    Pilih paket yang sesuai (Promo/Basic/Standar/Premium), lalu
-                    klik Daftar & Berlangganan di halaman pricing E-POS
-                    AuliaSoft.
+                    Daftarkan bisnis Anda di pos.auliasoft.com/business/register. Akun akan diaktivasi dan Anda mendapatkan akses penuh ke fitur sesuai paket yang dipilih.
                   </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-num">3</div>
                 <div class="step-content">
-                  <h5>Pembayaran</h5>
+                  <h5>Testing & Pelatihan Awal</h5>
                   <p>
-                    Lakukan pembayaran sesuai paket yang dipilih. AuliaSoft
-                    menawarkan harga kompetitif dan pengiriman/aktivasi cepat ke
-                    seluruh Indonesia.
+                    Tim AuliaSoft mendampingi proses testing sistem dan memberikan pelatihan penggunaan fitur kasir, stok, dan laporan melalui sesi remote/online.
                   </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-num">4</div>
                 <div class="step-content">
-                  <h5>Aktivasi & Setup Akun</h5>
+                  <h5>Implementasi & Go Live</h5>
                   <p>
-                    Akun E-POS Anda diaktifkan. Tim AuliaSoft membantu proses
-                    setup awal, import data produk, dan konfigurasi sesuai
-                    kebutuhan bisnis.
+                    Input data produk, supplier, dan konfigurasi bisnis. Sistem siap beroperasi secara penuh di bisnis Anda dengan pendampingan tim support.
                   </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-num">5</div>
                 <div class="step-content">
-                  <h5>Pelatihan & Pendampingan</h5>
+                  <h5>Support Berkelanjutan</h5>
                   <p>
-                    Tim support memberikan pelatihan penggunaan aplikasi secara
-                    online maupun langsung. Support WA 24/7 tersedia selama masa
-                    berlangganan.
+                    Dukungan teknis online dan WhatsApp 24/7 selama masa berlangganan. Garansi aplikasi selama 1.5 tahun untuk menjamin kelancaran operasional.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="process-block">
-            <h3>🔬 Proses Testing & Kebijakan</h3>
+            <h3>🔬 Kebijakan Layanan</h3>
             <div class="policy-list">
-              <div class="policy-item">
-                <div class="policy-icon">🧪</div>
-                <div>
-                  <h5>Pengujian Sistem (Testing)</h5>
-                  <p>
-                    Setiap fitur baru E-POS AuliaSoft melalui proses pengujian
-                    internal sebelum dirilis. Tim QA memastikan stabilitas dan
-                    akurasi sistem sebelum update dideploy ke pengguna.
-                  </p>
-                </div>
-              </div>
-              <div class="policy-item">
-                <div class="policy-icon">🔔</div>
-                <div>
-                  <h5>Status Perbaikan Transparan</h5>
-                  <p>
-                    Tersedia halaman Status Perbaikan resmi di
-                    <a
-                      href="https://pos.auliasoft.com/repair-status"
-                      target="_blank"
-                      style="color: var(--primary)"
-                      >pos.auliasoft.com/repair-status</a
-                    >
-                    untuk memantau status perbaikan dan pembaruan sistem secara
-                    real-time.
-                  </p>
-                </div>
-              </div>
               <div class="policy-item">
                 <div class="policy-icon">🛡️</div>
                 <div>
@@ -3590,33 +3203,37 @@
               <div class="policy-item">
                 <div class="policy-icon">🔒</div>
                 <div>
-                  <h5>Kebijakan Privasi Data</h5>
+                  <h5> Kebijakan Keamanan Data</h5>
                   <p>
-                    Data pelanggan bersifat rahasia dan hanya digunakan untuk
-                    operasional layanan. AuliaSoft tidak membagikan data klien
-                    kepada pihak ketiga tanpa persetujuan.
+                    Data bisnis klien bersifat rahasia dan tidak dibagikan kepada pihak ketiga. Sistem dilindungi enkripsi dan backup berkala untuk menjaga integritas data Anda.
                   </p>
                 </div>
               </div>
+              
               <div class="policy-item">
-                <div class="policy-icon">📦</div>
+                <div class="policy-icon">💳</div>
                 <div>
-                  <h5>Pengiriman & Aktivasi</h5>
+                  <h5>Kebijakan Pembayaran & Refund</h5>
                   <p>
-                    Sebagai produk SaaS, E-POS AuliaSoft diaktifkan secara
-                    digital – tidak ada pengiriman fisik. Akses langsung
-                    tersedia setelah proses registrasi dan pembayaran selesai.
+                    Pembayaran dilakukan di muka sebelum akses diberikan. Konsultasikan kebutuhan refund atau perpanjangan langganan langsung dengan tim AuliaSoft via WhatsApp.
                   </p>
                 </div>
               </div>
               <div class="policy-item">
                 <div class="policy-icon">🔄</div>
                 <div>
-                  <h5>Kebijakan Pembaruan</h5>
+                  <h5>Kebijakan Update & Pengembangan</h5>
                   <p>
-                    Seluruh update fitur dan keamanan tersedia otomatis bagi
-                    pengguna aktif tanpa biaya tambahan. AuliaSoft berkomitmen
-                    untuk terus mengembangkan aplikasi sesuai kebutuhan pasar.
+                    Update fitur dan perbaikan sistem dilakukan secara berkala tanpa biaya tambahan selama masa berlangganan aktif. Status perbaikan dapat dipantau di pos.auliasoft.com/repair-status.
+                  </p>
+                </div>
+              </div>
+              <div class="policy-item">
+                <div class="policy-icon">📦</div>
+                <div>
+                  <h5>  Kebijakan Pengiriman (Hardware)</h5>
+                  <p>
+                    Untuk pemesanan hardware pendukung, pengiriman dilakukan ke seluruh Indonesia. Waktu pengiriman bervariasi tergantung lokasi tujuan.
                   </p>
                 </div>
               </div>
